@@ -1,8 +1,8 @@
 {% set name = "stem" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "1b61363c32f50804a377d472761e26abed56dd9017aba43614dd4a151d7d91ab" %}
+{% set hash_value = "c9eaf3116cb60c15995cbd3dec3a5cbc50e9bb6e062c4d6d42201e566f498ca2" %}
 
 package:
   name: {{ name|lower }}
