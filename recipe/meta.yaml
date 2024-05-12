@@ -1,17 +1,14 @@
 {% set name = "stem" %}
-{% set version = "1.8.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "a0b48ea6224e95f22aa34c0bc3415f0eb4667ddeae3dfb5e32a6920c185568c2" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 81d43a7c668ba9d7bc1103b2e7a911e9d148294b373d27a59ae8da79ef7a3e2f
 
 build:
   noarch: python
@@ -33,8 +30,8 @@ about:
   home: https://stem.torproject.org/
   license: GNU (LGPLv3)
   license_file: LICENSE
-  summary: 'Stem is a Python controller library that allows applications to interact with Tor (https://www.torproject.org/).'
-  description: "Stem is a Python controller library for Tor. With it you can use Tor's control protocol to script against the Tor process, or build things such as Nyx. Stem's latest version is 1.6.0 (released November 5th, 2017)."
+  summary: Stem is a Python controller library that allows applications to interact with Tor (https://www.torproject.org/).
+  description: Stem is a Python controller library for Tor. With it you can use Tor's control protocol to script against the Tor process, or build things such as Nyx. Stem's latest version is 1.6.0 (released November 5th, 2017).
   doc_url: https://stem.torproject.org/
   dev_url: https://gitweb.torproject.org/stem.git/
 
